@@ -5,7 +5,7 @@
     $password = $_GET['password'];
     $r_password = $_GET['r-password'];
     $errors = array();
-    if(1 == 1){
+    
       if(trim($login) == '' || trim($email) == '' || trim($password) == '' || trim($r_password) == ''){
         echo "noData";
         array_push($errors, 'error');
@@ -35,5 +35,5 @@
         echo "reg";
         newUser($login, $email, $password);
       }
-    }
+    
 ?>
